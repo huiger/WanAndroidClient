@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TitleLayout">
+        <attr name="leftImage" format="reference"/>
+        <attr name="centreText" format="string|reference"/>
+        <attr name="rightImage" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="TabItem">
+        <attr name="tip" format="string"/>
+        <attr name="selectColor" format="color"/>
+        <attr name="unSelectColor" format="color"/>
+        <attr name="selectIcon" format="reference"/>
+        <attr name="unSelectIcon" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="Text_EditTextLayout">
+        <attr name="tv_type" format="string|reference"/>
+        <attr name="textColor" format="color"/>
+        <attr name="textSize" format="float"/>
+        <attr name="hintText" format="string|reference"/>
+    </declare-styleable>
+
+</resources>

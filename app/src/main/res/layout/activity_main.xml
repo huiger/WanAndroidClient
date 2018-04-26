@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="huiger.wanandroidclient.MainActivity">
+
+    <huiger.wanandroidclient.widgets.TitleLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:centreText="首页"/>
+
+
+    <FrameLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/line"
+        app:layout_constraintTop_toBottomOf="@+id/titleLayout"/>
+
+    <View style="@style/lineStyle"
+          android:id="@+id/line"
+        app:layout_constraintBottom_toTopOf="@id/ll_tab"/>
+
+    <LinearLayout
+        android:id="@+id/ll_tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="horizontal">
+
+        <huiger.wanandroidclient.widgets.TabItem
+            android:id="@+id/tab_index"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="huiger.wanandroidclient.fragment.IndexFragment"
+            app:selectColor="@color/sel_color"
+            app:selectIcon="@mipmap/index_sel"
+            app:tip="首页"
+            app:unSelectColor="@color/unSel_color"
+            app:unSelectIcon="@mipmap/index"/>
+
+        <huiger.wanandroidclient.widgets.TabItem
+            android:id="@+id/tab_tree"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="huiger.wanandroidclient.fragment.TreeFragment"
+            app:selectColor="@color/sel_color"
+            app:selectIcon="@mipmap/tree_sel"
+            app:tip="体系"
+            app:unSelectColor="@color/unSel_color"
+            app:unSelectIcon="@mipmap/tree"/>
+
+        <huiger.wanandroidclient.widgets.TabItem
+            android:id="@+id/tab_project"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="huiger.wanandroidclient.fragment.ProjectsFragment"
+            app:selectColor="@color/sel_color"
+            app:selectIcon="@mipmap/project_sel"
+            app:tip="项目"
+            app:unSelectColor="@color/unSel_color"
+            app:unSelectIcon="@mipmap/project"/>
+
+        <huiger.wanandroidclient.widgets.TabItem
+            android:id="@+id/tab_mine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="huiger.wanandroidclient.fragment.MineFragment"
+            app:selectColor="@color/sel_color"
+            app:selectIcon="@mipmap/mine_sel"
+            app:tip="个人"
+            app:unSelectColor="@color/unSel_color"
+            app:unSelectIcon="@mipmap/mine"/>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
