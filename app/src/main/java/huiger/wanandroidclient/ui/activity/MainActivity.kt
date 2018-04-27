@@ -1,7 +1,8 @@
-package huiger.wanandroidclient
+package huiger.wanandroidclient.ui.activity
 
 import android.support.v4.app.Fragment
 import android.view.View
+import huiger.wanandroidclient.R
 import huiger.wanandroidclient.base.BaseActivity
 import huiger.wanandroidclient.base.BaseFragment
 import huiger.wanandroidclient.widgets.TabItem

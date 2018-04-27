@@ -1,4 +1,4 @@
-package huiger.wanandroidclient.fragment
+package huiger.wanandroidclient.ui.fragment
 
 import huiger.wanandroidclient.R
 import huiger.wanandroidclient.base.BaseFragment

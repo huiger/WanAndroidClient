@@ -1,5 +1,6 @@
-package huiger.wanandroidclient
+package huiger.wanandroidclient.ui.activity
 
+import huiger.wanandroidclient.R
 import huiger.wanandroidclient.base.BaseActivity
 
 class LoginActivity : BaseActivity() {

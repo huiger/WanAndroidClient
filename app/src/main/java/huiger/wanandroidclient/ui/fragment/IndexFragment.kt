@@ -1,4 +1,4 @@
-package huiger.wanandroidclient.fragment
+package huiger.wanandroidclient.ui.fragment
 
 import android.support.v7.widget.LinearLayoutManager
 import android.util.Log

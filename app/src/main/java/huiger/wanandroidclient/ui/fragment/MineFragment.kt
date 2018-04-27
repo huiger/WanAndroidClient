@@ -1,11 +1,11 @@
-package huiger.wanandroidclient.fragment
+package huiger.wanandroidclient.ui.fragment
 
 import android.content.Intent
 import android.view.View
-import huiger.wanandroidclient.LoginActivity
 import huiger.wanandroidclient.R
 import huiger.wanandroidclient.base.BaseFragment
 import huiger.wanandroidclient.constans.Constans
+import huiger.wanandroidclient.ui.activity.LoginActivity
 import huiger.wanandroidclient.utils.PreferenceUtils
 import kotlinx.android.synthetic.main.fragment_mine_layout.*
 
@@ -29,7 +29,14 @@ class MineFragment : BaseFragment() {
 
         if (!loginStatus){  // 未登录
             tv_user_name.text = "未登录, 请登录!"
+        }else{
+            TODO()
+
+
+
         }
+
+
     }
 
 
