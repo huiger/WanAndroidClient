@@ -17,7 +17,6 @@ object Constans {
 
     var showToast : Toast ?= null
 
-
-
+    const val LOGIN_STATUS = "login_status"
 
 }

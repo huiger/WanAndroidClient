@@ -58,7 +58,7 @@ class IndexFragment : BaseFragment(), IHomeContract.HomeView {
 
     private val bannerAdapter: BGABanner.Adapter<ImageView, String> by lazy {
         BGABanner.Adapter<ImageView, String>({ banner, itemView, url, position ->
-            CommonUtils().showImage(activity, url, itemView)
+            CommonUtils.showImage(activity, url, itemView)
         })
     }
 

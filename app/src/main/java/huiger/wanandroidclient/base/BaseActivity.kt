@@ -73,7 +73,7 @@ abstract class BaseActivity : AppCompatActivity() {
             }
             //给statusbar着色
             val view = View(this)
-            view.layoutParams = ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, CommonUtils().getStatusBarHeight())
+            view.layoutParams = ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, CommonUtils.getStatusBarHeight())
             view.setBackgroundColor(color)
             contentView.addView(view)
         }

@@ -22,7 +22,7 @@ class HomeBannerAdapter : BaseQuickAdapter<HomeListBean.DatasBean, BaseViewHolde
 
     override fun convert(helper: BaseViewHolder, item: HomeListBean.DatasBean) {
         helper.getView<TextView>(R.id.tv_auther).text = item.author
-        helper.getView<TextView>(R.id.tv_time).text = CommonUtils().dataForMat(item.publishTime)
+        helper.getView<TextView>(R.id.tv_time).text = CommonUtils.dataForMat(item.publishTime)
         helper.getView<TextView>(R.id.tv_title).text = item.title
 
         helper.getView<CheckBox>(R.id.cb_collect).isChecked = item.isCollect

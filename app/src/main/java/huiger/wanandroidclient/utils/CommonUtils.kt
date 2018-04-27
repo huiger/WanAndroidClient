@@ -19,7 +19,7 @@ import java.util.*
  *      *     *  * * * *     Desc :
  *
  ****************************************************************/
-class CommonUtils {
+object CommonUtils {
 
     fun showImage(context: Context, url: String?, iv: ImageView) {
         Glide.with(context)
