@@ -30,6 +30,10 @@ class MainActivity : BaseActivity() {
 
     }
 
+    override fun initListener() {
+
+    }
+
     private var currentFragmentTag: String? = null
     private var lastClickView : TabItem<BaseFragment> ?= null
 

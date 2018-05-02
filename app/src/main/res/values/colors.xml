@@ -12,5 +12,6 @@
 
     <color name="black_70">#70000000</color>
     <color name="item_gap">#f5f5f5</color>
+    <color name="link_color">#2782ef</color>
 
 </resources>

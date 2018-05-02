@@ -5,7 +5,10 @@ import android.content.Context
 import android.support.annotation.StringRes
 import android.support.v4.app.Fragment
 import android.util.TypedValue
+import android.view.ViewGroup
 import android.widget.Toast
+import com.just.agentweb.AgentWeb
+import com.just.agentweb.ChromeClientCallbackManager
 import huiger.wanandroidclient.constans.Constans
 import huiger.wanandroidclient.net.BaseResponse
 import io.reactivex.Observable
@@ -108,7 +111,21 @@ fun Context.sp2px(spValue: Float): Int {
     return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, spValue, resources.displayMetrics).toInt()
 }
 
-
+/**
+ * getAgentWeb
+ */
+fun String.getAgentWeb(
+        activity: Activity, webContent: ViewGroup,
+        layoutParams: ViewGroup.LayoutParams,
+        receivedTitleCallback: ChromeClientCallbackManager.ReceivedTitleCallback?
+) = AgentWeb.with(activity)//传入Activity or Fragment
+        .setAgentWebParent(webContent, layoutParams)//传入AgentWeb 的父控件
+        .useDefaultIndicator()// 使用默认进度条
+        .defaultProgressBarColor() // 使用默认进度条颜色
+        .setReceivedTitleCallback(receivedTitleCallback) //设置 Web 页面的 title 回调
+        .createAgentWeb()//
+        .ready()
+        .go(this)!!
 
 
 

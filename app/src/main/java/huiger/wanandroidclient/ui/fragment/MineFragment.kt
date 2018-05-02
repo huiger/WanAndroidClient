@@ -42,9 +42,7 @@ class MineFragment : BaseFragment() {
 
     private val onListener: View.OnClickListener = View.OnClickListener { v ->
         when(v){
-            tv_user_name -> {
-                startActivity(Intent(activity, LoginActivity::class.java))
-            }
+            tv_user_name -> startActivity(Intent(activity, LoginActivity::class.java))
         }
     }
 

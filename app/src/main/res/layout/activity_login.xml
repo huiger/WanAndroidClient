@@ -5,7 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gray"
     tools:context="huiger.wanandroidclient.ui.activity.LoginActivity">
 
 
@@ -37,6 +36,7 @@
     </RadioGroup>
 
     <ImageView
+        android:id="@+id/iv_back"
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:padding="12dp"

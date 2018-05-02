@@ -19,4 +19,8 @@ object Constans {
 
     const val LOGIN_STATUS = "login_status"
 
+    /**
+     * 跳转携带的参数
+     */
+    const val JUMP_URL = "jump_url"
 }

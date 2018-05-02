@@ -1,17 +1,15 @@
-package huiger.wanandroidclient.test;
+package huiger.wanandroidclient.widgets
 
 /****************************************************************
  *
  *      *     *  * * * *     Created by huiGer
- *      *     *  *           Time : 2018/4/27 16:59
+ *      *     *  *           Time : 2018/4/27 16:45
  *      * * * *  *   * *     Email: zhihuiemail@163.com
  *      *     *  *     *     Blog : huiGer.top
  *      *     *  * * * *     Desc :
  *
  ****************************************************************/
-
-public class A {
-        public void  tr(){
-
-        }
+open class TitleOnClickListener {
+     open fun leftOnClick() {}
+     open fun rightOnClick() {}
 }

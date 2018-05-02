@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_layout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="10dp"
     android:layout_margin="5dp"
     android:background="@color/white"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:padding="10dp">
 
 
     <ImageView
@@ -19,19 +20,19 @@
     <TextView
         android:id="@+id/tv_auther"
         style="@style/WRAP_WRAP"
-        tools:text="huiGer"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        app:layout_constraintLeft_toRightOf="@id/iv_head"/>
+        app:layout_constraintLeft_toRightOf="@id/iv_head"
+        tools:text="huiGer"/>
 
     <TextView
         android:id="@+id/tv_time"
         style="@style/WRAP_WRAP"
-        tools:text="2018/4/24"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="5dp"
+        app:layout_constraintLeft_toRightOf="@id/iv_head"
         app:layout_constraintTop_toBottomOf="@id/tv_auther"
-        app:layout_constraintLeft_toRightOf="@id/iv_head"/>
+        tools:text="2018/4/24"/>
 
     <CheckBox
         android:id="@+id/cb_collect"
@@ -47,13 +48,18 @@
         android:id="@+id/tv_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="15sp"
         android:layout_marginTop="10dp"
         android:textColor="@color/bg_color"
+        android:textSize="15sp"
         app:layout_constraintTop_toBottomOf="@id/iv_head"
         tools:text="弄懂Gradle依赖 Android依赖导入全攻略弄懂Gradle依赖 Android依赖导入全攻略弄懂Gradle依赖 Android依赖导入全攻略"/>
 
-
-
-
+    <TextView
+        android:id="@+id/tv_classify"
+        style="@style/WRAP_WRAP"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/link_color"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        tools:text="JAVA深入>>集合>>"/>
 </android.support.constraint.ConstraintLayout>

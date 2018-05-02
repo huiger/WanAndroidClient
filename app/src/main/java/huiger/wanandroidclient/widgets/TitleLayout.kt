@@ -26,24 +26,40 @@ class TitleLayout(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : 
         val typedArray = context?.obtainStyledAttributes(attrs, R.styleable.TitleLayout)
 
         tv_centre.text = typedArray?.getText(R.styleable.TitleLayout_centreText)
-        val leftImgRes = typedArray?.getInt(R.styleable.TitleLayout_leftImage, -1)
-        val rightImgRes = typedArray?.getInt(R.styleable.TitleLayout_rightImage, -1)
+        val leftImgRes = typedArray?.getResourceId(R.styleable.TitleLayout_leftImage, -1)
+        val rightImgRes = typedArray?.getResourceId(R.styleable.TitleLayout_rightImage, -1)
         typedArray?.recycle()
 
 
-        if (leftImgRes != -1){
+        if (leftImgRes != -1) {
             iv_left.visibility = View.VISIBLE
             iv_left.setImageResource(leftImgRes!!)
         }
 
-        if (rightImgRes != -1){
+        if (rightImgRes != -1) {
             iv_right.visibility = View.VISIBLE
             iv_right.setImageResource(rightImgRes!!)
         }
+
+
+        iv_left.setOnClickListener { titleClickListener?.leftOnClick() }
+        iv_right.setOnClickListener { titleClickListener?.rightOnClick() }
 
     }
 
 
 
+    fun setTitleContent( string: String){
+        tv_centre.text = string
+    }
+
+
+    private var titleClickListener: TitleOnClickListener? = null
+
+    fun setTitleOnClickListener(titleClickListener: TitleOnClickListener) {
+        this.titleClickListener = titleClickListener
+    }
+
 
 }
+
